@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer';
 import Popup from './components/popup/Popup';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import LoginPage from './pages/LoginPage';
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -27,7 +28,7 @@ const App = () => {
   },[]);
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 '>
-      <Navbar handleOrderPopup={handleOrderPopup}/>
+      {/* <Navbar handleOrderPopup={handleOrderPopup}/>
       <Hero handleOrderPopup={handleOrderPopup}/>
       <Products />
       <TopProducts />
@@ -36,7 +37,8 @@ const App = () => {
       <Products />
       <Testimonials /> 
       <Footer />
-      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} /> */}
+      <LoginPage />
     </div>
   )
 }
